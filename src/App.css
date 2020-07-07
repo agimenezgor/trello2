@@ -1,0 +1,12 @@
+.App{
+  background-image: url('./img/fondo.jpg');
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+
+.App-main {
+  min-height: 85vh;
+  max-height: 85vh;
+}
+
