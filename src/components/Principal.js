@@ -10,7 +10,6 @@ class Principal extends Component {
             visible : true,
             nombre : '',
         }
-        this.mapListas = this.mapListas.bind(this);
     }
     crearLista = () =>{this.setState({visible: false});}
     cerrar = () => {
@@ -55,7 +54,7 @@ class Principal extends Component {
         this.setState({listas: []});
         this.setState(_state =>({listas: arrayListas}));
     }
-    mapListas(){
+    mapListas = () => {
         return <React.Fragment>
             {this.state.listas.map((lista, index) => (
                 <div className="col-md-2" key={`lista-${index}`}>
